@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const FEATURED_DEVS = [
+    { login: "karthik309k", name: "Karthik", emoji: "👨‍💻" },
     { login: "torvalds", name: "Linus Torvalds", emoji: "🐧" },
     { login: "gaearon", name: "Dan Abramov", emoji: "⚛️" },
     { login: "yyx990803", name: "Evan You", emoji: "💚" },
-    { login: "sindresorhus", name: "Sindre Sorhus", emoji: "✨" },
 ];
 
 const FEATURES = [
