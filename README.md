@@ -1,16 +1,60 @@
-# React + Vite
+# ⚡ DevPulse — GitHub Developer Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-blue)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38bdf8)
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-black)
 
-Currently, two official plugins are available:
+## 🔴 Live Demo
+**[devpulse-six.vercel.app](https://devpulse-six.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 About
+DevPulse turns any GitHub profile into a beautiful 
+analytics dashboard. Search any developer, explore 
+their repositories, view language breakdowns and 
+star charts, discover trending projects, and bookmark 
+your favourite developers.
 
-## React Compiler
+## ✨ Features
+- 🔍 Search any GitHub username instantly
+- 📊 Interactive charts — language pie + stars bar chart
+- 🗂️ Filter repos by language, stars, forks, name
+- 🔥 Trending repos by language and time period
+- 🔖 Bookmark developers — persists after refresh
+- 🌙 Dark / Light mode with system preference detection
+- 💀 Skeleton loaders on every data-fetching component
+- ⚠️ Full error handling with user-friendly messages
+- 🔑 GitHub token support for 5,000 req/hr rate limit
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
+| Tech | Usage |
+|------|-------|
+| React 18 | Core framework |
+| React Router v6 | Page routing |
+| Axios | API calls + interceptors |
+| Recharts | Data visualization |
+| Framer Motion | Animations |
+| Context API + useReducer | Global state |
+| Tailwind CSS | Styling |
+| react-hot-toast | Notifications |
+| react-markdown | README rendering |
 
-## Expanding the ESLint configuration
+## 📁 Pages
+- `/` — Landing page with hero search
+- `/dashboard/:username` — Full analytics dashboard
+- `/repo/:username/:reponame` — Repository detail
+- `/trending` — Trending repos feed
+- `/bookmarks` — Saved developer profiles
+- `/settings` — Theme + GitHub token settings
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Run Locally
+git clone https://github.com/karthik309k/devpulse.git
+cd devpulse
+npm install
+npm run dev
+
+## ⚙️ Environment Variables
+Create a `.env` file in the root:
+VITE_GITHUB_BASE_URL=https://api.github.com
+
+## 👨‍💻 Author
+Built by Karthik — [github.com/karthik309k](https://github.com/karthik309k)
